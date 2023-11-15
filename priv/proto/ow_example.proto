@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+package ow_example; 
+
+message ow_example {
+    oneof msg {
+        join     join     = 1;
+        part     part     = 2;
+        snapshot snapshot = 3;
+        transfer transfer = 4;  
+    }
+}
+
+// sub-messages
+
+message vector2 {
+    required float x = 1;
+    required float y = 2;
+}
+
+// top-level messages
+
+message transfer {
+}
+
+message snapshot {
+}
+
+message join {
+}
+
+message part {
+}

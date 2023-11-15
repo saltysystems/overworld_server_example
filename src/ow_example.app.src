@@ -1,0 +1,16 @@
+{application, ow_example,
+ [{description, "Overworld Sample Application"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, {ow_example_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    overworld
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.
